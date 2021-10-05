@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./Home.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon</a>
+        <ul>
+            <li><a href="#" class="active" >Home</a></li>
+            <li><a href="#" >About</a></li>
+            <li><a href="#" >Work</a></li>
+            <li><a href="#" >Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Layers/stars.png" id="stars">
+        <img src="Layers/moon.png" id="moon">
+        <img src="Layers/back.png" id="back">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="Layers/front.png" id="front">
+        
+       
+    </section>
+    <div class="sec" id="sec">
+        <h2>Live through the night!!</h2>
+        <p>Eye for an eye? I grit my teeth under the weight
+            See, I got my back up against the wall; it's 'bout to break
+            Walking through the fight
+            Ah, living, living's never easy
+            Coming for the light
+            Give it, give it, give it
+            Now I wanna
+            Live through the night
+            Come out alive
+            Hold your fire
+            Why don't you let me go?
+            I, I need to
+            Live like I'm higher
+            Feel like I'm lighter
+            Why don't you let me go?
+            Why don't you let me go?
+            Why don't you let me go?
+            Wait, you try to fill it with no bottom to the glass
+            Why? I see you cover and point your finger on attack
+            Walking through the fight
+            Oh, living, living's never easy
+            Step into the light
+            Oh, give it, give it, give it
+            Now I wanna
+            Live through the night
+            Come out alive
+            Hold your fire
+            Why don't you let me go?
+            I, I need to
+            Live like I'm higher
+            Feel like I'm lighter
+            Why don't you let me go?
+            Why don't you let me go?
+            Why don't you let me go?
+            I can't even breathe
+            Don't feel my heart beat, no
+            Oh, hey, it's the time to leave
+            Oh, why don't you let me go?
+            Oh, why don't you let me go?
+            Now I wanna
+            Live through the night
+            Come out alive
+            Hold your fire
+            Why don't you let me go?
+            I, I need to
+            Live like I'm higher
+            Feel like I'm lighter
+            Why don't you let me go?
+            Why don't you let me go?
+            Why don't you let me go?
+            No, no, no
+            </p>
+
+    </div>
+    
+    <script>
+        let stars=document.getElementById('stars');
+        let moon=document.getElementById('moon');
+        let back=document.getElementById('back');
+        let text=document.getElementById('text');
+        let btn=document.getElementById('btn');
+        let front=document.getElementById('front');
+        let header=document.querySelector('header');
+
+        window.addEventListener('scroll',function() {
+            let value=window.scrollY;
+            stars.style.left=value*0.25+'px';
+            moon.style.top=value*1.05+'px';
+            back.style.top=value*0.5+'px';
+            front.style.top=value*0+'px';
+            text.style.marginRight=value*4+'px';
+            btn.style.marginTop=value*0.5+'px';
+            header.style.top=value*0.5+'px';
+        })
+    </script>
+    
+    
+</body>
+</html>
